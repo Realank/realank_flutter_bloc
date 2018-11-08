@@ -1,6 +1,6 @@
 name: realank_flutter_bloc
-description: a bloc wrapper package
-version: 0.0.1
+description: a bloc wrapper package, you can use BLoC pattern easily
+version: 0.1.0
 author: Realank <realank@126.com>
 homepage: https://github.com/Realank/realank_flutter_bloc
 
