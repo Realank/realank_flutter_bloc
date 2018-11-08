@@ -1,5 +1,7 @@
 # realank_flutter_bloc
 
+[![Build Status](https://travis-ci.com/Realank/realank_flutter_bloc.svg?branch=master)](https://travis-ci.com/Realank/realank_flutter_bloc)
+
 a bloc wrapper package
 
 ## Introduce
