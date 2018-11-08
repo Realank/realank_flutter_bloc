@@ -1,6 +1,6 @@
 # example
 
-A new Flutter application.
+A example of realank_flutter_bloc
 
 ## Getting Started
 
