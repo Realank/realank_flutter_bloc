@@ -1,1 +1,6 @@
 language: dart
+
+script:
+  - cd example
+  - flutter packages get
+  - flutter run aot
