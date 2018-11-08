@@ -1,6 +1,7 @@
 # realank_flutter_bloc
 
 [![Build Status](https://travis-ci.com/Realank/realank_flutter_bloc.svg?branch=master)](https://travis-ci.com/Realank/realank_flutter_bloc)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 a bloc wrapper package
 

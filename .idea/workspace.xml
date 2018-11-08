@@ -34,8 +34,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="44">
-                <caret line="2" column="139" lean-forward="false" selection-start-line="2" selection-start-column="139" selection-end-line="2" selection-end-column="139" />
+              <first_editor relative-caret-position="154">
+                <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -389,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541670568285</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add icons">
+      <created>1541670802143</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1541670802143</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -430,7 +437,8 @@
     <MESSAGE value="add travis" />
     <MESSAGE value="fix version" />
     <MESSAGE value="fix travis" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix travis" />
+    <MESSAGE value="add icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="add icons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -563,8 +571,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="2" column="139" lean-forward="false" selection-start-line="2" selection-start-column="139" selection-end-line="2" selection-end-column="139" />
+          <first_editor relative-caret-position="154">
+            <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor>
