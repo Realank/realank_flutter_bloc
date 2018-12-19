@@ -7,7 +7,7 @@ a bloc wrapper package
 
 ## Introduce
 
-relank_flutter_bloc contains 3 classes:
+realank_flutter_bloc contains 3 classes:
 
 **RLKBaseBLoC**:a BLoC data that can store any type of data
 
