@@ -24,20 +24,20 @@ class RLKBaseBLoC<T> {
   }
 }
 
-class RLKBloCProvider extends InheritedWidget {
+class RLKBLoCProvider extends InheritedWidget {
   final RLKBaseBLoC bloc;
 
-  RLKBloCProvider({Key key, Widget child, RLKBaseBLoC bloc})
+  RLKBLoCProvider({Key key, Widget child, RLKBaseBLoC bloc})
       : this.bloc = bloc,
         super(key: key, child: child);
 
   @override
-  bool updateShouldNotify(RLKBloCProvider oldWidget) {
+  bool updateShouldNotify(RLKBLoCProvider oldWidget) {
     return this.bloc.data != oldWidget.bloc.data;
   }
 
   static RLKBaseBLoC of(BuildContext context) =>
-      (context.inheritFromWidgetOfExactType(RLKBloCProvider) as RLKBloCProvider).bloc;
+      (context.inheritFromWidgetOfExactType(RLKBLoCProvider) as RLKBLoCProvider).bloc;
 }
 
 class RLKBLoCBuilder<T> extends StatelessWidget {
@@ -45,7 +45,7 @@ class RLKBLoCBuilder<T> extends StatelessWidget {
   final RLKBLoCWidgetBuilder<T> builder;
   @override
   Widget build(BuildContext context) {
-    final bloc = RLKBloCProvider.of(context);
+    final bloc = RLKBLoCProvider.of(context);
     Widget child = StreamBuilder<T>(
         stream: bloc.stream,
         initialData: bloc.data,

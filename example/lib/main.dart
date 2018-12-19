@@ -8,7 +8,7 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return RLKBloCProvider(
+    return RLKBLoCProvider(
       bloc: CountBLoC(0),
       child: MaterialApp(
         theme: ThemeData.light(),

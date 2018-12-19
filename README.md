@@ -11,7 +11,7 @@ relank_flutter_bloc contains 3 classes:
 
 **RLKBaseBLoC**:a BLoC data that can store any type of data
 
-**RLKBloCProvider**:the root widget of whose widgets need to use RLKBaseBLoC's data
+**RLKBLoCProvider**:the root widget of whose widgets need to use RLKBaseBLoC's data
 
 **RLKBLoCBuilder**:a RLKBaseBLoC getter
 
@@ -27,12 +27,12 @@ class CountBLoC extends RLKBaseBLoC<int> {
 }
 ```
 
-#### 2. wrap root widget with RLKBloCProvider, and pass a RLKBaseBLoC instance
+#### 2. wrap root widget with RLKBLoCProvider, and pass a RLKBaseBLoC instance
 ```
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return RLKBloCProvider(
+    return RLKBLoCProvider(
       bloc: CountBLoC(0),
       child: MaterialApp(
         theme: ThemeData.light(),

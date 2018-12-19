@@ -1,6 +1,6 @@
 name: realank_flutter_bloc
 description: a bloc wrapper package, you can use BLoC(Business Logic Component). pattern easily
-version: 0.1.1
+version: 0.1.2
 author: Realank <realank@126.com>
 homepage: https://github.com/Realank/realank_flutter_bloc
 
