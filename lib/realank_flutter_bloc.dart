@@ -6,9 +6,10 @@ import 'dart:async';
 typedef RLKBLoCWidgetBuilder<T> = Widget Function(BuildContext context, T data, RLKBaseBLoC bloc);
 
 class RLKBaseBLoC<T> {
+  final T initialData;
   T _data;
   StreamController<T> _controller;
-  RLKBaseBLoC(T data) {
+  RLKBaseBLoC(T data) : initialData = data {
     this._data = data;
     this._controller = StreamController<T>.broadcast();
   }
@@ -45,10 +46,11 @@ class RLKBLoCBuilder<T> extends StatelessWidget {
   final RLKBLoCWidgetBuilder<T> builder;
   @override
   Widget build(BuildContext context) {
+    print('build bloc builder ');
     final bloc = RLKBLoCProvider.of(context);
     Widget child = StreamBuilder<T>(
         stream: bloc.stream,
-        initialData: bloc.data,
+        initialData: bloc.initialData,
         builder: (BuildContext context, AsyncSnapshot<T> snapshot) {
           return this.builder(context, snapshot.data, bloc);
         });

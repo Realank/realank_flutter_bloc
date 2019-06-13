@@ -10,24 +10,33 @@ class UnderPage extends StatefulWidget {
 class _STFState extends State<UnderPage> {
   @override
   Widget build(BuildContext context) {
-    return RLKBLoCBuilder(builder: (BuildContext context, int data, RLKBaseBLoC bloc) {
+    print('build under page');
+    return RLKBLoCBuilder(builder: (BuildContext context, Map data, RLKBaseBLoC bloc) {
       CountBLoC bloc2 = bloc as CountBLoC;
       return Scaffold(
         appBar: AppBar(
           title: Text('Under Page'),
         ),
-        body: Center(
-            child: Text(
-          "You hit me: $data times",
-          style: Theme.of(context).textTheme.display1,
-        )),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            setState(() {});
-            bloc2.increment();
-          },
-          child: Icon(Icons.add),
-        ),
+        body: Column(children: [
+          Text(
+            "A: ${data['a']} times",
+            style: Theme.of(context).textTheme.display1,
+          ),
+          Text(
+            "B: ${data['b']} times",
+            style: Theme.of(context).textTheme.display1,
+          ),
+          FlatButton(
+              onPressed: () {
+                bloc2.changeA(data['a'] + 1);
+              },
+              child: Text('count a')),
+          FlatButton(
+              onPressed: () {
+                bloc2.changeB(data['b'] + 2);
+              },
+              child: Text('count b'))
+        ]),
       );
     });
   }

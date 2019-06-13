@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RLKBLoCProvider(
-      bloc: CountBLoC(0),
+      bloc: CountBLoC({'a': 1, 'b': 1}),
       child: MaterialApp(
         theme: ThemeData.light(),
         home: TopPage(),

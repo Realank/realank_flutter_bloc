@@ -11,9 +11,9 @@ class TopPage extends StatelessWidget {
         title: Text('Top Page'),
       ),
       body:
-          Center(child: RLKBLoCBuilder(builder: (BuildContext context, int data, RLKBaseBLoC bloc) {
+          Center(child: RLKBLoCBuilder(builder: (BuildContext context, Map data, RLKBaseBLoC bloc) {
         return Text(
-          'You hit me: $data times',
+          'A: ${data['a']} times,B: ${data['b']} times',
           style: Theme.of(context).textTheme.display1,
         );
       })),
